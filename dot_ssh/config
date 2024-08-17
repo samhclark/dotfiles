@@ -1,0 +1,5 @@
+Host github.com
+	Hostname ssh.github.com
+	Port 443
+	User git
+	PKCS11Provider /usr/lib64/pkcs11/libtpm2_pkcs11.so

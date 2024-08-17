@@ -1,3 +1,7 @@
 brew "chezmoi"
-
+brew "fd"
+brew "ripgrep"
+brew "starship"
+ 
 tap "homebrew/linux-fonts" if OS.linux?
+brew "homebrew/linux-fonts/font-jetbrains-mono-nerd-font"

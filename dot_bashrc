@@ -28,4 +28,5 @@ export VISUAL="${EDITOR}"
 export PAGER="less"
 
 # Initialize Starship -- should go last?
+export STARSHIP_CONFIG="${HOME}/.config/starship/config.toml"
 eval "$(starship init bash)"

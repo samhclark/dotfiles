@@ -1,9 +1,18 @@
-brew "chezmoi"
+brew "bash-language-server"
 brew "bat"
+brew "chezmoi"
+brew "dust"
+brew "eza"
 brew "fd"
+brew "helix"
+brew "jq"
+brew "just"
 brew "ripgrep"
-brew "starship"
-brew "helix" 
- 
+brew "shellcheck"
+brew "starship" 
+
+# set arguments for all `brew install --cask` commands
+cask_args require_sha: true
+
 tap "homebrew/linux-fonts" if OS.linux?
 brew "homebrew/linux-fonts/font-jetbrains-mono-nerd-font"

@@ -27,6 +27,10 @@ export EDITOR="${HOMEBREW_PREFIX}/bin/hx"
 export VISUAL="${EDITOR}"
 export PAGER="less"
 
+# Source cargo env for rustup
+. "${HOME}/.cargo/env"
+
 # Initialize Starship -- should go last?
 export STARSHIP_CONFIG="${HOME}/.config/starship/config.toml"
 eval "$(starship init bash)"
+

@@ -28,6 +28,10 @@ export EDITOR="${HOMEBREW_PREFIX}/bin/hx"
 export VISUAL="${EDITOR}"
 export PAGER="less"
 
+eval "$(fzf --bash)"
+export FZF_DEFAULT_COMMAND="fd --type f --hidden"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
 # Source cargo env for rustup
 . "${HOME}/.cargo/env"
 

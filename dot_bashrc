@@ -26,7 +26,9 @@ export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:${INFOPATH:-}";
 
 export EDITOR="${HOMEBREW_PREFIX}/bin/hx"
 export VISUAL="${EDITOR}"
-export PAGER="less"
+export PAGER="less -R"
+
+alias ls="ls --color=auto"
 
 eval "$(fzf --bash)"
 export FZF_DEFAULT_COMMAND="fd --type f --hidden"

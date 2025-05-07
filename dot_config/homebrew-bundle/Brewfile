@@ -6,8 +6,10 @@ brew "crane"
 brew "dust"
 brew "eza"
 brew "fd"
+brew "flyctl"
 brew "fzf"
 brew "gh"
+brew "gradle"
 brew "helix"
 brew "htop"
 brew "jj"
@@ -16,6 +18,7 @@ brew "just"
 brew "lld"
 brew "mold"
 brew "ollama"
+brew "openjdk"
 brew "ripgrep"
 brew "rustup"
 brew "rust-analyzer"
@@ -24,6 +27,4 @@ brew "starship"
 
 # set arguments for all `brew install --cask` commands
 cask_args require_sha: true
-
-tap "homebrew/linux-fonts" if OS.linux?
-brew "homebrew/linux-fonts/font-jetbrains-mono-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
